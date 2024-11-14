@@ -1,5 +1,5 @@
 import { Container } from "@/components";
-import { MainTop, MainMiddle, MainBottom } from "./components";
+import { MainTop, MainMiddle, MainBottom, MainEmail, MainVideo } from "./components";
 import * as S from "./styles";
 import { FaAngleUp } from "react-icons/fa6";
 import { useEffect, useState } from "react";
@@ -33,6 +33,9 @@ export function Home() {
         <MainTop />
         <MainMiddle />
         <MainBottom />
+        <MainVideo />
+        <MainEmail />
+
         {showScrollButton &&
           <S.ButtonScrool onClick={scrollToTop}>
             <FaAngleUp />

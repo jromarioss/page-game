@@ -26,6 +26,9 @@ items-center
 [&>p]:font-semibold
 [&>p]:text-wrap
 [&>p]:text-project-red-100
+
+md:[&>h2]:text-4xl
+md:[&>p]:text-lg
 `;
 
 export const Cards = tw.article`
@@ -49,6 +52,35 @@ gap-2
 items-center
 rounded-xl
 relative
+
+md:w-[600px]
+md:h-[650px]
+`;
+
+export const Card2 = tw.article`
+w-[300px]
+h-[332px]
+bg-red-600
+flex
+flex-col
+gap-2
+items-center
+rounded-xl
+relative
+
+md:w-[280px]
+`;
+
+export const Wrapp = tw.div`
+flex
+flex-col
+gap-10
+
+md:flex-row
+md:flex-wrap
+md:items-center
+md:justify-center
+md:gap-8
 `;
 
 export const CardImg = tw.article`
@@ -58,6 +90,32 @@ overflow-hidden
 `;
 
 export const CardInfo = tw.article`
+absolute
+bottom-4
+left-4
+flex
+flex-col
+gap-1
+items-center
+justify-start
+
+[&>h2]:text-xl
+[&>h2]:w-full
+[&>h2]:text-left
+[&>h2]:text-project-white
+[&>h2]:font-russo
+
+[&>p]:text-sm
+[&>p]:font-lato
+[&>p]:w-full
+[&>p]:text-left
+
+md:[&>h2]:text-2xl
+md:[&>p]:text-base
+md:gap-2
+`;
+
+export const CardInfo2 = tw.article`
 absolute
 bottom-4
 left-4

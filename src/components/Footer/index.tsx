@@ -36,7 +36,6 @@ export const Footer = () => {
         </S.Icon>
       </S.RedesArea>
 
-   
       <p className="font-lato">nome projeto aqui © 2024</p>
     </S.Container>
   )

@@ -11,7 +11,6 @@ fixed
 z-[12]
 top-0
 right-0
-bg-project-gray-100
 
 md:p-8
 md:h-[100px]

@@ -17,8 +17,11 @@ right-4
 flex
 items-center
 justify-center
-z-[20]
+z-[19]
 
 [&>svg]:text-project-red-100
 [&>svg]:text-3xl
+
+md:w-[54px]
+md:h-[54px]
 `;

@@ -21,6 +21,18 @@ export const Menu = () => {
     onSetShowModalWallet(true)
   }
 
+  const handeleGoTo = (value: string) => {
+    if (value === "feature") {
+
+    } else if(value === "characters") {
+
+    } else if(value === "tutorial") {
+
+    }
+
+    onSetShowMenu(false);
+  }
+
   return (
     <S.Container>
         <S.ButtonClose onClick={() => onSetShowMenu(false)}>
@@ -30,7 +42,10 @@ export const Menu = () => {
       <S.Main>
         {buttons.map((button: IButtons, index: number) => {
           return (
-            <S.Buttons key={index}>
+            <S.Buttons
+              key={index}
+              onClick={() => handeleGoTo(button.value)}
+            >
               {button.title}
             </S.Buttons>
           )

@@ -9,6 +9,8 @@ gap-10
 justify-between
 py-10
 bg-project-gray-100
+
+md:py-14
 `;
 
 export const ButtonsAreas = tw.section`
@@ -16,6 +18,8 @@ flex
 gap-4
 
 [&>p]:font-lato
+
+md:gap-8
 `;
 
 export const EmailArea = tw.section`
@@ -24,7 +28,10 @@ flex-col
 gap-2
 items-center
 justify-center
+
 [&>p]:font-lato
+
+md:[&>p]:text-lg
 `;
 
 export const Logo = tw.section`
@@ -38,6 +45,8 @@ export const RedesArea = tw.section`
 flex
 mb-4
 gap-4
+
+md:[&>p]:text-lg
 `;
 
 export const Icon = tw.div`
@@ -50,4 +59,8 @@ w-[32px]
 h-[32px]
 
 [&>svg]:text-xl
+
+md:w-[44px]
+md:rounded-xl
+md:h-[44px]
 `;

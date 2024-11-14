@@ -19,7 +19,9 @@ export default {
 
           'red-100': '#A12C2C',
 
-          'yellow-100': '#e0c126'
+          'yellow-100': '#e0c126',
+
+          'blue-100': '#F3F7FE'
         }
       },
       fontFamily: {

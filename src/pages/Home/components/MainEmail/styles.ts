@@ -7,7 +7,9 @@ flex
 flex-col
 items-center
 justify-center
-bg-project-red-100
+bg-project-blue-100
+
+text-project-gray-100
 `;
 
 export const Text = tw.article`
@@ -22,6 +24,7 @@ px-8
 
 [&>p]:font-lato
 [&>p]:text-base
+[&>p]:font-semibold
 [&>p]:text-wrap
 
 md:[&>h2]:text-4xl
@@ -30,13 +33,33 @@ md:[&>p]:text-center
 md:px-10
 `;
 
-export const Button = tw.button`
+export const Subscribe = tw.div`
+flex
+flex-col
+items-center
+gap-4
 mt-10
-bg-project-white
-text-project-gray-100
+`;
+
+export const Input = tw.input`
+border-zinc-500
+rounded-md
+py-1
+pl-2
+w-[300px]
+border-2
+`;
+
+export const Button = tw.button`
+w-[120px]
+h-[36px]
+bg-project-red-100
+text-project-white
 font-lato
-px-8
-py-2
+flex
+items-center
+justify-center
+text-sm
 rounded-lg
 
 md:px-10

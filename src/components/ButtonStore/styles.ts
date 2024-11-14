@@ -13,6 +13,10 @@ border-zinc-700
 rounded-md
 
 [&>img]:w-[28px]
+
+md:w-[200px]
+md:h-[64px]
+md:[&>img]:w-[36px]
 `;
 
 export const Text = tw.section`
@@ -20,6 +24,11 @@ flex
 flex-col
 
 [&>p]:text-[10px]
+
 [&>span]:text-base
 [&>span]:-mt-1
+
+md:[&>p]:text-sm
+md:[&>span]:text-2xl
+md:[&>span]:-mt-2
 `;

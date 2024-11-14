@@ -21,53 +21,55 @@ export const MainMiddle = () => {
           </S.CardInfo>
         </S.Card>
 
-        <S.Card>
-          <S.CardImg>
+        <S.Wrapp>
+          <S.Card2>
+            <S.CardImg>
 
-          </S.CardImg>
+            </S.CardImg>
 
-          <S.CardInfo>
-            <h2>Fearless Healer</h2>
-            <p>Becomes tiny and manipulates metal</p>
-            <S.Type>Female</S.Type>
-          </S.CardInfo>
-        </S.Card>
+            <S.CardInfo2>
+              <h2>Fearless Healer</h2>
+              <p>Becomes tiny and manipulates metal</p>
+              <S.Type>Female</S.Type>
+            </S.CardInfo2>
+          </S.Card2>
 
-        <S.Card>
-          <S.CardImg>
+          <S.Card2>
+            <S.CardImg>
 
-          </S.CardImg>
+            </S.CardImg>
 
-          <S.CardInfo>
-            <h2>Fearless Healer</h2>
-            <p>Becomes tiny and manipulates metal</p>
-            <S.Type>Female</S.Type>
-          </S.CardInfo>
-        </S.Card>
+            <S.CardInfo2>
+              <h2>Fearless Healer</h2>
+              <p>Becomes tiny and manipulates metal</p>
+              <S.Type>Female</S.Type>
+            </S.CardInfo2>
+          </S.Card2>
 
-        <S.Card>
-          <S.CardImg>
+          <S.Card2>
+            <S.CardImg>
 
-          </S.CardImg>
+            </S.CardImg>
 
-          <S.CardInfo>
-            <h2>Fearless Healer</h2>
-            <p>Becomes tiny and manipulates metal</p>
-            <S.Type>Female</S.Type>
-          </S.CardInfo>
-        </S.Card>
+            <S.CardInfo2>
+              <h2>Fearless Healer</h2>
+              <p>Becomes tiny and manipulates metal</p>
+              <S.Type>Female</S.Type>
+            </S.CardInfo2>
+          </S.Card2>
 
-        <S.Card>
-          <S.CardImg>
+          <S.Card2>
+            <S.CardImg>
 
-          </S.CardImg>
+            </S.CardImg>
 
-          <S.CardInfo>
-            <h2>Fearless Healer</h2>
-            <p>Becomes tiny and manipulates metal</p>
-            <S.Type>Female</S.Type>
-          </S.CardInfo>
-        </S.Card>
+            <S.CardInfo2>
+              <h2>Fearless Healer</h2>
+              <p>Becomes tiny and manipulates metal</p>
+              <S.Type>Female</S.Type>
+            </S.CardInfo2>
+          </S.Card2>
+        </S.Wrapp>
       </S.Cards>
     </S.Container>
   )

@@ -2,11 +2,11 @@ import tw from 'tailwind-styled-components';
 
 export const Container = tw.div`
 w-full
-h-full
+h-lvh
 p-4
-absolute
+fixed
 top-0
-z-[10]
+z-[20]
 right-0
 bg-project-gray-100
 flex
@@ -28,7 +28,7 @@ gap-4
 export const ButtonClose = tw.div`
 absolute
 top-6
-right-4
+right-3
 flex
 items-center
 justify-center

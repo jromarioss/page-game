@@ -7,7 +7,7 @@ flex
 flex-col
 items-center
 justify-center
-bg-project-red-100
+bg-project-gray-100
 `;
 
 export const Text = tw.article`
@@ -30,16 +30,18 @@ md:[&>p]:text-center
 md:px-10
 `;
 
-export const Button = tw.button`
+export const Video = tw.div`
+w-[300px]
+
+md:w-[600px]
+md:h-[400px]
+`;
+
+export const VideoFrame = tw.iframe`
+w-full
+h-full
+rounded-xl
 mt-10
-bg-project-white
 text-project-gray-100
 font-lato
-px-8
-py-2
-rounded-lg
-
-md:px-10
-md:py-3
-md:text-lg
 `;
