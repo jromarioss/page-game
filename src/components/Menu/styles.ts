@@ -48,19 +48,3 @@ coursor-pointer
 
 md:text-3xl
 `;
-
-export const ButtonWallet = tw.button`
-text-lg
-py-2
-px-4
-mt-4
-rounded-3xl
-font-semibold
-coursor-pointer
-bg-project-yellow-100
-
-md:text-2xl
-md:px-8
-md:py-4
-md:rounded-[54px]
-`;

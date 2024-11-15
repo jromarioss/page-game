@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useState } from 'react';
 import * as S from './styles';
-import { Header, ModalWallet, Menu, Footer, HeaderFake } from '../';
+import { Header, Menu, Footer, HeaderFake } from '../';
 import { useMain } from '@/hooks';
 
 interface IContainer {
@@ -13,7 +13,7 @@ export interface IButtons {
 }
 
 export const Container = ({ children }: IContainer) => {
-  const { showModalWallet, showMenu, onSetShowMenu } = useMain();
+  const { showMenu, onSetShowMenu } = useMain();
 
   const [changeHeader, setChangeHeader] = useState(false);
 
@@ -65,8 +65,6 @@ export const Container = ({ children }: IContainer) => {
           handleGoTo={handleGoTo}        
         />
       }
-      {showModalWallet && 
-        <ModalWallet />}
       {showMenu && 
         <Menu
           buttons={buttons}

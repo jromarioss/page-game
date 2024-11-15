@@ -1,10 +1,13 @@
 import { createContext, ReactNode, useState } from 'react';
+import { createThirdwebClient } from "thirdweb";
+import { createWallet } from "thirdweb/wallets";
+
 
 interface IMainContext {
-  showModalWallet: boolean;
   showMenu: boolean;
-  onSetShowModalWallet: (value: boolean) => void;
   onSetShowMenu: (value: boolean) => void;
+  client: any;
+  wallets: any;
 }
 
 interface IMainContextProvider {
@@ -15,15 +18,24 @@ export const MainContext = createContext({} as IMainContext);
 
 export function MainContextProvider({ children }: IMainContextProvider) {
 
-  const [showModalWallet, setShowModalWallet] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
-  const onSetShowModalWallet = (value: boolean) => setShowModalWallet(value);
   const onSetShowMenu = (value: boolean) => setShowMenu(value);
+
+  const client = createThirdwebClient({
+    clientId: "50b95ac1db24d3d8b60500af861ae56e",
+  });
+  
+  const wallets = [
+    createWallet("walletConnect"),
+    createWallet("io.metamask"),
+    createWallet("io.zerion.wallet"),
+    createWallet("com.fireblocks"),
+  ];
 
   return (
     <MainContext.Provider value={{
-      onSetShowModalWallet, showModalWallet, onSetShowMenu, showMenu
+      onSetShowMenu, showMenu, client, wallets,
     }}>
       {children}
     </MainContext.Provider>

@@ -2,6 +2,7 @@ import { useMain } from "@/hooks";
 import * as S from "./styles";
 import { IoMenu } from "react-icons/io5";
 import { IButtons } from "../Container";
+import { ConnectButton } from "thirdweb/react";
 
 interface IHeader {
   buttons: IButtons[];
@@ -9,7 +10,7 @@ interface IHeader {
 }
 
 export const Header = ({ buttons, handleGoTo }: IHeader) => {
-  const { onSetShowMenu, onSetShowModalWallet } = useMain();
+  const { onSetShowMenu, client, wallets } = useMain();
 
   return (
     <S.Container>
@@ -32,9 +33,14 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
             )
           })}
 
-          <S.ButtonWallet onClick={() => onSetShowModalWallet(true)}>
-            Connect Wallet
-          </S.ButtonWallet>
+          <ConnectButton
+            client={client}
+            wallets={wallets}
+            connectModal={{
+              size: "wide",
+              showThirdwebBranding: false,
+            }}
+          />
         </S.NavButtons>       
       </S.Nav>
     </S.Container>

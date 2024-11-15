@@ -2,6 +2,7 @@ import * as S from './styles';
 import { IoCloseSharp } from 'react-icons/io5';
 import { useMain } from '@/hooks';
 import { IButtons } from '../Container';
+import { ConnectButton } from "thirdweb/react";
 
 interface IMenu {
   buttons: IButtons[];
@@ -9,12 +10,7 @@ interface IMenu {
 }
 
 export const Menu = ({ buttons, handleGoTo }: IMenu) => {
-  const { onSetShowMenu, onSetShowModalWallet } = useMain();
-
-  const handleShowModalWallet = () => {
-    onSetShowMenu(false);
-    onSetShowModalWallet(true)
-  }
+  const { onSetShowMenu, client, wallets } = useMain();
 
   return (
     <S.Container>
@@ -34,9 +30,14 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
           )
         })}
 
-        <S.ButtonWallet onClick={handleShowModalWallet}>
-          Connect Wallet
-        </S.ButtonWallet>
+        <ConnectButton
+          client={client}
+          wallets={wallets}
+          connectModal={{
+            size: "wide",
+            showThirdwebBranding: false,
+          }}
+        />
       </S.Main>
     </S.Container>
   );

@@ -56,13 +56,3 @@ hidden
 lg:flex
 lg:text-2xl
 `;
-
-export const ButtonWallet = tw.button`
-text-lg
-py-2
-px-4
-rounded-3xl
-font-semibold
-coursor-pointer
-bg-project-yellow-100
-`;
