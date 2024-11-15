@@ -19,7 +19,6 @@ export const MainTop = () => {
 
         <S.InfoPhone>
           <img src={PhoneImg} alt="phone img" className="z-10" />
-          <img src={PhoneImg} alt="phone img" className="absolute top-4 -right-10 md:right-[32px]" />
         </S.InfoPhone>
       </S.InfoTop>
 
@@ -28,7 +27,7 @@ export const MainTop = () => {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Lorem ipsum dolor, sit amet consectetur elit</p>
       </S.Main>
 
-      <S.InfoBottom>
+      <S.InfoBottom id="feature">
         <S.InfoBottomText>
           <h2>LEGENDARY CHARACTERS</h2>
           <p>Explore a growing roster of powerful characters, each with their own unique personality, strengths, and abilities.</p>

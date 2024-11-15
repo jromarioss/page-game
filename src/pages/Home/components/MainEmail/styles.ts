@@ -2,7 +2,7 @@ import tw from "tailwind-styled-components";
 
 export const Container = tw.section`
 w-full
-py-16
+py-14
 flex
 flex-col
 items-center
@@ -10,6 +10,8 @@ justify-center
 bg-project-blue-100
 
 text-project-gray-100
+
+2xl:py-16
 `;
 
 export const Text = tw.article`
@@ -31,6 +33,10 @@ md:[&>h2]:text-4xl
 md:[&>p]:text-lg
 md:[&>p]:text-center
 md:px-10
+
+lg:w-[800px]
+
+xl:w-[900px]
 `;
 
 export const Subscribe = tw.div`
@@ -39,6 +45,9 @@ flex-col
 items-center
 gap-4
 mt-10
+
+md:flex-row
+md:gap-0
 `;
 
 export const Input = tw.input`
@@ -48,6 +57,8 @@ py-1
 pl-2
 w-[300px]
 border-2
+
+md:text-lg
 `;
 
 export const Button = tw.button`
@@ -62,7 +73,7 @@ justify-center
 text-sm
 rounded-lg
 
-md:px-10
-md:py-3
-md:text-lg
+md:h-[44px]
+md:text-base
+md:-ml-2
 `;

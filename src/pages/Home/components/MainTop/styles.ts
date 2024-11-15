@@ -2,31 +2,36 @@ import tw from "tailwind-styled-components";
 
 export const Container = tw.section`
 w-full
-bg-red-500
 flex
 flex-col
 items-center
 justify-center
+bgMainTop
 `;
 
 export const InfoTop = tw.article`
 w-full
-flex
 mt-[200px]
+flex
 flex-col
 gap-16
 justify-center
 text-project-white
+
+lg:items-center
+
+xl:flex-row
+xl:gap-8
 `;
 
 export const Info = tw.article`
 w-full
+px-4
 flex
 flex-col
 gap-4
 items-center
 text-center
-px-4
 
 [&>h2]:text-2xl
 [&>h2]:font-russo
@@ -38,19 +43,12 @@ px-4
 md:[&>h2]:text-4xl
 md:[&>p]:text-lg
 md:px-8
-`;
 
-export const InfoPhone = tw.article`
-flex
-gap-4
-items-center
-justify-center
-relative
-
-[&>img]:w-[180px]
-[&>img]:mr-20
-
-md:[&>img]:w-[250px]
+xl:w-[600px]
+xl:items-start
+xl:px-0
+xl:gap-6
+xl:[&>p]:mb-8
 `;
 
 export const InfoTopButtonArea = tw.section`
@@ -63,17 +61,37 @@ md:flex-row
 md:gap-8
 `;
 
+export const InfoPhone = tw.article`
+flex
+gap-4
+items-center
+justify-center
+relative
+-mb-2
+
+[&>img]:w-[300px]
+
+md:[&>img]:w-[450px]
+md:-mb-8
+
+lg:w-[800px]
+
+xl:w-[500px]
+xl:justify-start
+`;
+
 export const Main = tw.main`
 w-full
 py-12
 px-4
-bg-project-gray-100
-text-project-white
-text-center
 flex
 flex-col
+items-center
 gap-4
 z-[11]
+text-center
+bg-project-gray-100
+text-project-white
 
 [&>h2]:text-2xl
 [&>h2]:font-russo
@@ -86,20 +104,33 @@ md:[&>h2]:text-4xl
 md:[&>p]:text-lg
 md:px-10
 md:py-14
+
+2xl:py-16
+
+lg:[&>h2]:w-[800px]
+lg:[&>p]:w-[800px]
+
+xl:[&>h2]:w-[900px]
+xl:[&>p]:w-[900px]
 `;
 
 export const InfoBottom = tw.article`
 w-full
+py-8
+px-6
 flex
-bg-project-shadow
 flex-col
 items-center
 gap-10
-py-8
-px-6
+bg-project-shadow
 text-project-white
 
 md:py-14
+
+xl:flex-row
+xl:justify-center
+
+2xl:py-16
 `;
 
 export const InfoBottomText = tw.article`

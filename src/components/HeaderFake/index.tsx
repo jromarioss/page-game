@@ -1,10 +1,15 @@
 import { useMain } from "@/hooks";
 import * as S from "./styles";
 import { IoMenu } from "react-icons/io5";
+import { IButtons } from "../Container";
 
+interface IHeaderFake {
+  buttons: IButtons[];
+  handleGoTo: (value: string) => void;
+}
 
-export const HeaderFake = () => {
-  const { onSetShowMenu } = useMain();
+export const HeaderFake = ({ buttons, handleGoTo }: IHeaderFake) => {
+  const { onSetShowMenu, onSetShowModalWallet } = useMain();
 
   return (
     <S.Container>
@@ -16,9 +21,20 @@ export const HeaderFake = () => {
         </S.ButtonMenu> 
 
         <S.NavButtons>
-          <S.Button>Features</S.Button>
-          <S.Button>Characters</S.Button>
-          <S.Button>Tutorial</S.Button>
+          {buttons.map((button: IButtons, index: number) => {
+            return (
+              <S.Button
+                key={index}
+                onClick={() => handleGoTo(button.value)}
+              >
+                {button.title}
+              </S.Button>
+            )
+          })}
+
+          <S.ButtonWallet onClick={() => onSetShowModalWallet(true)}>
+            Connect Wallet
+          </S.ButtonWallet>
         </S.NavButtons>        
       </S.Nav>
     </S.Container>

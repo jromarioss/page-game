@@ -3,13 +3,11 @@ import tw from "tailwind-styled-components";
 export const Container = tw.section`
 w-full
 py-16
-bg-project-gray-100
 flex
 flex-col
 items-center
 justify-center
-
-
+bg-project-gray-100
 `;
 
 export const Text = tw.article`
@@ -33,54 +31,34 @@ md:[&>p]:text-lg
 
 export const Cards = tw.article`
 w-full
+py-8
+px-6
 flex
 flex-col
 items-center
 gap-10
-py-8
-px-6
 text-project-white
+
+xl:flex-row
+xl:justify-center
 `;
 
 export const Card = tw.article`
 w-[300px]
 h-[332px]
-bg-red-600
 flex
 flex-col
 gap-2
 items-center
 rounded-xl
 relative
+bg-red-600
 
 md:w-[600px]
 md:h-[650px]
-`;
 
-export const Card2 = tw.article`
-w-[300px]
-h-[332px]
-bg-red-600
-flex
-flex-col
-gap-2
-items-center
-rounded-xl
-relative
-
-md:w-[280px]
-`;
-
-export const Wrapp = tw.div`
-flex
-flex-col
-gap-10
-
-md:flex-row
-md:flex-wrap
-md:items-center
-md:justify-center
-md:gap-8
+xl:w-[480px]
+xl:h-[500px]
 `;
 
 export const CardImg = tw.article`
@@ -115,6 +93,37 @@ md:[&>p]:text-base
 md:gap-2
 `;
 
+export const Wrapp = tw.div`
+flex
+flex-col
+gap-10
+
+md:flex-row
+md:flex-wrap
+md:items-center
+md:justify-center
+md:gap-8
+
+lg:w-[600px]
+`;
+
+export const Card2 = tw.article`
+w-[300px]
+h-[332px]
+flex
+flex-col
+gap-2
+items-center
+rounded-xl
+relative
+bg-red-600
+
+md:w-[280px]
+
+xl:w-[260px]
+xl:h-[234px]
+`;
+
 export const CardInfo2 = tw.article`
 absolute
 bottom-4
@@ -135,19 +144,25 @@ justify-start
 [&>p]:font-lato
 [&>p]:w-full
 [&>p]:text-left
+
+xl:[&>h2]:text-lg
+xl:[&>p]:text-xs
+xl:gap-2
 `;
 
 export const Type = tw.article`
 self-start
+px-3
+py-1
 flex
 items-center
 justify-center
 gap-2
-px-3
-py-1
 rounded-2xl
 font-lato
-bg-project-red-100
 text-sm
+bg-project-red-100
 text-project-white
+
+xl:text-xs
 `;

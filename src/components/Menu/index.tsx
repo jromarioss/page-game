@@ -1,36 +1,19 @@
 import * as S from './styles';
 import { IoCloseSharp } from 'react-icons/io5';
 import { useMain } from '@/hooks';
+import { IButtons } from '../Container';
 
-interface IButtons {
-  title: string;
-  value: string;
+interface IMenu {
+  buttons: IButtons[];
+  handleGoTo: (value: string) => void;
 }
 
-export const Menu = () => {
+export const Menu = ({ buttons, handleGoTo }: IMenu) => {
   const { onSetShowMenu, onSetShowModalWallet } = useMain();
-
-  const buttons: IButtons[] = [
-    {title: "Feature",value:"feature"},
-    {title: "Characters",value:"characters"},
-    {title: "Tutorial",value:"tutorial"},
-  ]
 
   const handleShowModalWallet = () => {
     onSetShowMenu(false);
     onSetShowModalWallet(true)
-  }
-
-  const handeleGoTo = (value: string) => {
-    if (value === "feature") {
-
-    } else if(value === "characters") {
-
-    } else if(value === "tutorial") {
-
-    }
-
-    onSetShowMenu(false);
   }
 
   return (
@@ -44,7 +27,7 @@ export const Menu = () => {
           return (
             <S.Buttons
               key={index}
-              onClick={() => handeleGoTo(button.value)}
+              onClick={() => handleGoTo(button.value)}
             >
               {button.title}
             </S.Buttons>

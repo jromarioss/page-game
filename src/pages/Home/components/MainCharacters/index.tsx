@@ -1,8 +1,8 @@
 import * as S from "./styles";
 
-export const MainMiddle = () => {
+export const MainCharacters = () => {
   return (
-    <S.Container>
+    <S.Container id="characters">
       <S.Text>
         <h2>Characters</h2>
         <p>Lorem ipsum dolor charascter</p>

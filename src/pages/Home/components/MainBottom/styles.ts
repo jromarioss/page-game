@@ -2,12 +2,14 @@ import tw from "tailwind-styled-components";
 
 export const Container = tw.section`
 w-full
-py-16
+py-14
 flex
 flex-col
 items-center
 justify-center
-bg-project-red-100
+bgMainTop
+
+2xl:py-16
 `;
 
 export const Text = tw.article`
@@ -28,6 +30,10 @@ md:[&>h2]:text-4xl
 md:[&>p]:text-lg
 md:[&>p]:text-center
 md:px-10
+
+lg:w-[800px]
+
+xl:w-[900px]
 `;
 
 export const Button = tw.button`

@@ -35,6 +35,13 @@ w-[300px]
 
 md:w-[600px]
 md:h-[400px]
+
+xl:w-[800px]
+xl:h-[550px]
+xl:pb-16
+
+2xl:w-[1000px]
+2xl:h-[700px]
 `;
 
 export const VideoFrame = tw.iframe`

@@ -2,7 +2,7 @@ import * as S from "./styles";
 
 export const MainVideo = () => {
   return (
-    <S.Container>
+    <S.Container id="tutorial">
       <S.Text>
         <h2>Quick Tutorial</h2>
         <p>New here? This tutorial is for you!</p>

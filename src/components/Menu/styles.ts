@@ -23,6 +23,8 @@ flex
 flex-col
 items-start
 gap-4
+
+md:gap-8
 `;
 
 export const ButtonClose = tw.div`
@@ -33,15 +35,18 @@ flex
 items-center
 justify-center
 
-
 [&>svg]:text-project-white
 [&>svg]:text-5xl
+
+md:right-8
 `;
 
 export const Buttons = tw.button`
 text-lg
 font-semibold
 coursor-pointer
+
+md:text-3xl
 `;
 
 export const ButtonWallet = tw.button`
@@ -53,4 +58,9 @@ rounded-3xl
 font-semibold
 coursor-pointer
 bg-project-yellow-100
+
+md:text-2xl
+md:px-8
+md:py-4
+md:rounded-[54px]
 `;

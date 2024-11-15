@@ -45,6 +45,8 @@ export const NavButtons = tw.div`
 hidden
 
 lg:flex
+lg:items-center
+lg:justify-center
 lg:gap-8
 `;
 
@@ -52,4 +54,15 @@ export const Button = tw.button`
 hidden
 
 lg:flex
+lg:text-2xl
+`;
+
+export const ButtonWallet = tw.button`
+text-lg
+py-2
+px-4
+rounded-3xl
+font-semibold
+coursor-pointer
+bg-project-yellow-100
 `;

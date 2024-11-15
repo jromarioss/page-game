@@ -1,5 +1,5 @@
 export { MainTop } from "./MainTop";
-export { MainMiddle } from "./MainMiddle";
+export { MainCharacters } from "./MainCharacters";
 export { MainBottom } from "./MainBottom";
 export { MainEmail } from "./MainEmail";
 export { MainVideo } from "./MainVideo";

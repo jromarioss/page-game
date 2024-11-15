@@ -8,8 +8,12 @@
 }
 
 .bgMainTop {
-  background-image: url('./assets/imagem01.jpg');
+  background-image: url('./assets/imagem01.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
+
+  @media (min-width: 1024px) {
+    background-position: center;
+  }
 }
