@@ -1,10 +1,26 @@
-import { ButtonStore } from "../";
+import { useMain } from "@/hooks";
 import * as S from "./styles";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 export const Footer = () => {
+  const { scrollToTop } = useMain();
+
+  const handleGoTo = (value: string) => {
+    const element = document.getElementById(value);
+
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY; 
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  }
 
   return (
     <S.Container>
@@ -14,14 +30,9 @@ export const Footer = () => {
       </S.EmailArea>
       
       <S.ButtonsAreas>
-        <p>Features</p>
-        <p>character</p>
-        <p>tutorial</p>
-      </S.ButtonsAreas>
-
-      <S.ButtonsAreas>
-        <ButtonStore type={1} />
-        <ButtonStore type={2} />
+        <p onClick={scrollToTop}>home</p>
+        <p onClick={() => handleGoTo("characters")}>character</p>
+        <p onClick={() => handleGoTo("tutorial")}>tutorial</p>
       </S.ButtonsAreas>
 
       <S.RedesArea>
@@ -36,7 +47,7 @@ export const Footer = () => {
         </S.Icon>
       </S.RedesArea>
 
-      <p className="font-lato">nome projeto aqui © 2024</p>
+      <p className="font-lato">Dyno Bomber © 2024</p>
     </S.Container>
   )
 }

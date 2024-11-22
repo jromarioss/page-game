@@ -51,16 +51,6 @@ xl:gap-6
 xl:[&>p]:mb-8
 `;
 
-export const InfoTopButtonArea = tw.section`
-flex
-flex-col
-gap-4
-mt-8
-
-md:flex-row
-md:gap-8
-`;
-
 export const InfoPhone = tw.article`
 flex
 gap-4

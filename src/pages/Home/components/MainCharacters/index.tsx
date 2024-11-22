@@ -1,4 +1,10 @@
 import * as S from "./styles";
+import Dino1PNG from "@/assets/dino01.png";
+import Dino2PNG from "@/assets/dino02.png";
+import Dino3PNG from "@/assets/dino03.png";
+import Dino4PNG from "@/assets/dino04.png";
+import Dino5PNG from "@/assets/dino05.png";
+import Dino6PNG from "@/assets/dino06.png";
 
 export const MainCharacters = () => {
   return (
@@ -11,7 +17,7 @@ export const MainCharacters = () => {
       <S.Cards>
         <S.Card>
           <S.CardImg>
-
+            <img src={Dino1PNG} alt="Dinossauro img" />
           </S.CardImg>
 
           <S.CardInfo>
@@ -24,7 +30,7 @@ export const MainCharacters = () => {
         <S.Wrapp>
           <S.Card2>
             <S.CardImg>
-
+              <img src={Dino3PNG} alt="Dinossauro img" />
             </S.CardImg>
 
             <S.CardInfo2>
@@ -36,7 +42,7 @@ export const MainCharacters = () => {
 
           <S.Card2>
             <S.CardImg>
-
+              <img src={Dino2PNG} alt="Dinossauro img" />
             </S.CardImg>
 
             <S.CardInfo2>
@@ -48,7 +54,7 @@ export const MainCharacters = () => {
 
           <S.Card2>
             <S.CardImg>
-
+              <img src={Dino5PNG} alt="Dinossauro img" />
             </S.CardImg>
 
             <S.CardInfo2>
@@ -60,7 +66,7 @@ export const MainCharacters = () => {
 
           <S.Card2>
             <S.CardImg>
-
+              <img src={Dino4PNG} alt="Dinossauro img" />
             </S.CardImg>
 
             <S.CardInfo2>

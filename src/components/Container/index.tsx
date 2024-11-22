@@ -1,6 +1,6 @@
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import * as S from './styles';
-import { Header, Menu, Footer, HeaderFake } from '../';
+import { Header, Menu, Footer } from '../';
 import { useMain } from '@/hooks';
 
 interface IContainer {
@@ -13,17 +13,20 @@ export interface IButtons {
 }
 
 export const Container = ({ children }: IContainer) => {
-  const { showMenu, onSetShowMenu } = useMain();
-
-  const [changeHeader, setChangeHeader] = useState(false);
+  const { showMenu, onSetShowMenu, scrollToTop } = useMain();
 
   const buttons: IButtons[] = [
-    {title: "Feature",value:"feature"},
+    {title: "Home",value:"home"},
     {title: "Characters",value:"characters"},
     {title: "Tutorial",value:"tutorial"},
   ]
 
   const handleGoTo = (value: string) => {
+    if (value === "home") {
+      scrollToTop();
+      return;
+    }
+
     const element = document.getElementById(value);
 
     if (element) {
@@ -40,31 +43,13 @@ export const Container = ({ children }: IContainer) => {
    onSetShowMenu(false);
   }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setChangeHeader(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <S.Container>
-      {changeHeader ?
-        <Header
-          buttons={buttons}
-          handleGoTo={handleGoTo}        
-        />
-        :
-        <HeaderFake
-          buttons={buttons}
-          handleGoTo={handleGoTo}        
-        />
-      }
+      <Header
+        buttons={buttons}
+        handleGoTo={handleGoTo}        
+      />
+
       {showMenu && 
         <Menu
           buttons={buttons}

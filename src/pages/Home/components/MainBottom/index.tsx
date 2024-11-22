@@ -1,4 +1,5 @@
 import * as S from "./styles";
+import { ButtonPlay } from "@/components";
 
 export const MainBottom = () => {
   return (
@@ -8,7 +9,7 @@ export const MainBottom = () => {
         <p>After a few months of freedom, the queen fell into the hands of the king of Dinosaurland again. Panic? No more! Legends know how to free her.</p>
       </S.Text>
 
-      <S.Button>PLAY FREE</S.Button>
+      <ButtonPlay />
     </S.Container>
   )
 }

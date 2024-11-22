@@ -47,12 +47,13 @@ export const Card = tw.article`
 w-[300px]
 h-[332px]
 flex
+p-4
 flex-col
 gap-2
 items-center
 rounded-xl
 relative
-bg-red-600
+bg-project-gray-200
 
 md:w-[600px]
 md:h-[650px]
@@ -110,13 +111,14 @@ lg:w-[600px]
 export const Card2 = tw.article`
 w-[300px]
 h-[332px]
+p-4
 flex
 flex-col
 gap-2
 items-center
 rounded-xl
 relative
-bg-red-600
+bg-project-gray-200
 
 md:w-[280px]
 

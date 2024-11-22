@@ -32,13 +32,19 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
               </S.Button>
             )
           })}
-
+          
           <ConnectButton
             client={client}
             wallets={wallets}
             connectModal={{
-              size: "wide",
-              showThirdwebBranding: false,
+              size: "wide"
+            }}
+            detailsModal={{
+              payOptions: {
+                buyWithFiat: {
+                  testMode: true,
+                },
+              },
             }}
           />
         </S.NavButtons>       

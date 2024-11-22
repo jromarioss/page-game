@@ -35,17 +35,3 @@ lg:w-[800px]
 
 xl:w-[900px]
 `;
-
-export const Button = tw.button`
-mt-10
-bg-project-white
-text-project-gray-100
-font-lato
-px-8
-py-2
-rounded-lg
-
-md:px-10
-md:py-3
-md:text-lg
-`;

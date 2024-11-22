@@ -18,6 +18,7 @@ flex
 gap-4
 
 [&>p]:font-lato
+[&>p]:text-white
 
 md:gap-8
 `;

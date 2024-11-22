@@ -3,9 +3,10 @@ import { MainTop, MainCharacters, MainBottom, MainEmail, MainVideo } from "./com
 import * as S from "./styles";
 import { FaAngleUp } from "react-icons/fa6";
 import { useEffect, useState } from "react";
+import { useMain } from "@/hooks";
 
 export function Home() {
-
+  const { scrollToTop } = useMain();
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   useEffect(() => {
@@ -19,13 +20,6 @@ export function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <Container>
