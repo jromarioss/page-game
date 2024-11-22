@@ -19,10 +19,10 @@ export const MainContext = createContext({} as IMainContext);
 export function MainContextProvider({ children }: IMainContextProvider) {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
-  const client = createThirdwebClient({clientId: "2f4ee41208bb9ed0a47072c26f0fab65"});
+  const client = createThirdwebClient({clientId: "8e214011a85f0c5ac3d7f5bf52f6a12c"});
 
   const wallets = [
-    inAppWallet({ auth: { options: ["google","phone"] } }),
+    inAppWallet({ auth: { options: ["google","email","phone"] } }),
     createWallet("io.metamask"),
   ];
 

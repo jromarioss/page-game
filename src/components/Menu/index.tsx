@@ -37,8 +37,24 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
             size: "wide",
             showThirdwebBranding: false,
           }}
+          detailsModal={{
+            payOptions: {
+              buyWithFiat: {
+                testMode: true,
+              },
+            },
+          }}
         />
       </S.Main>
     </S.Container>
   );
 };
+/* 
+detailsModal={{
+    payOptions: {
+      buyWithFiat: {
+        testMode: true, // defaults to false
+      },
+    },
+  }}
+*/
