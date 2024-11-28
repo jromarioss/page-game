@@ -14,7 +14,7 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
 
   return (
     <S.Container>
-      <S.Logo></S.Logo>
+      {/* <S.Logo></S.Logo> */}
 
       <S.Nav>
         <S.ButtonMenu onClick={() => onSetShowMenu(true)}>

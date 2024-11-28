@@ -22,8 +22,8 @@ export const MainEmail = () => {
   return (
     <S.Container>
       <S.Text>
-        <h2>SUBSCRIBE FOR THE QUEEN NEWS</h2>
-        <p>Subscribe today to receive the latest Defend the Queen news, updates, behind-the-scenes content, offers, and more (including other news, products, events, and promotions) by email.</p>
+        <h2>Se inscreva para mais informações!</h2>
+        <p>Inscreva-se com seu e-mail e receba as últimas novidades de Dyno Bomber!</p>
       </S.Text>
 
       <S.Subscribe>

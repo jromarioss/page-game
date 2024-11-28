@@ -24,14 +24,14 @@ export const Footer = () => {
 
   return (
     <S.Container>
-      <S.EmailArea>
+      {/* <S.EmailArea>
         <S.Logo></S.Logo>
         <p>email@email.com</p>
-      </S.EmailArea>
+      </S.EmailArea> */}
       
       <S.ButtonsAreas>
         <p onClick={scrollToTop}>home</p>
-        <p onClick={() => handleGoTo("characters")}>character</p>
+        <p onClick={() => handleGoTo("characters")}>personagens</p>
         <p onClick={() => handleGoTo("tutorial")}>tutorial</p>
       </S.ButtonsAreas>
 

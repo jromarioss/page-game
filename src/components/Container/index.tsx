@@ -17,8 +17,8 @@ export const Container = ({ children }: IContainer) => {
 
   const buttons: IButtons[] = [
     {title: "Home",value:"home"},
-    {title: "Characters",value:"characters"},
-    {title: "Tutorial",value:"tutorial"},
+    {title: "Personagens",value:"characters"},
+    {title: "Cenário",value:"tutorial"},
   ]
 
   const handleGoTo = (value: string) => {

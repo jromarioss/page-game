@@ -11,6 +11,7 @@ bgMainTop
 
 export const InfoTop = tw.article`
 w-full
+h-[350px]
 mt-[200px]
 flex
 flex-col
@@ -18,6 +19,9 @@ gap-16
 justify-center
 text-project-white
 
+md:h-[650px]
+
+lg:h-[700px]
 lg:items-center
 
 xl:flex-row
@@ -33,15 +37,15 @@ gap-4
 items-center
 text-center
 
-[&>h2]:text-2xl
+[&>h2]:text-4xl
+[&>h2]:text-center
+[&>h2]:font-bold
 [&>h2]:font-russo
 
-[&>p]:text-base
+[&>p]:text-lg
 [&>p]:text-wrap
 [&>p]:font-lato
 
-md:[&>h2]:text-4xl
-md:[&>p]:text-lg
 md:px-8
 
 xl:w-[600px]
@@ -49,25 +53,6 @@ xl:items-start
 xl:px-0
 xl:gap-6
 xl:[&>p]:mb-8
-`;
-
-export const InfoPhone = tw.article`
-flex
-gap-4
-items-center
-justify-center
-relative
--mb-2
-
-[&>img]:w-[300px]
-
-md:[&>img]:w-[450px]
-md:-mb-8
-
-lg:w-[800px]
-
-xl:w-[500px]
-xl:justify-start
 `;
 
 export const Main = tw.main`

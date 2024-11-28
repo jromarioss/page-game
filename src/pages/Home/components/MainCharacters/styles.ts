@@ -151,20 +151,3 @@ xl:[&>h2]:text-lg
 xl:[&>p]:text-xs
 xl:gap-2
 `;
-
-export const Type = tw.article`
-self-start
-px-3
-py-1
-flex
-items-center
-justify-center
-gap-2
-rounded-2xl
-font-lato
-text-sm
-bg-project-red-100
-text-project-white
-
-xl:text-xs
-`;

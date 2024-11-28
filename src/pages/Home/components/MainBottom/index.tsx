@@ -5,8 +5,8 @@ export const MainBottom = () => {
   return (
     <S.Container>
       <S.Text>
-        <h2>SEASON 2 IS LIVE NOW!</h2>
-        <p>After a few months of freedom, the queen fell into the hands of the king of Dinosaurland again. Panic? No more! Legends know how to free her.</p>
+        <h2>Jogue Agora!</h2>
+        <p>Prepare-se para a ação! Jogue agora e controle dinossauros explosivos. A aventura começa em Dyno Bomber!</p>
       </S.Text>
 
       <ButtonPlay />

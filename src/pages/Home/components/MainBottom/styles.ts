@@ -7,7 +7,7 @@ flex
 flex-col
 items-center
 justify-center
-bgMainTop
+bgMainMiddle
 
 2xl:py-16
 `;
@@ -18,6 +18,7 @@ flex-col
 gap-4
 items-center
 px-8
+mb-4
 
 [&>h2]:font-russo 
 [&>h2]:text-2xl

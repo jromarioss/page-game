@@ -33,6 +33,11 @@ md:px-10
 export const Video = tw.div`
 w-[300px]
 
+[&>img]:w-full
+[&>img]:h-full
+[&>img]:rounded-xl
+[&>img]:mt-4
+
 md:w-[600px]
 md:h-[400px]
 

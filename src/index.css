@@ -8,7 +8,18 @@
 }
 
 .bgMainTop {
-  background-image: url('./assets/bg.jpg');
+  background-image: url('./assets/bg03.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+
+  @media (min-width: 1024px) {
+    background-position: center;
+  }
+}
+
+.bgMainMiddle {
+  background-image: url('./assets/bg01.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;

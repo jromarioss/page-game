@@ -1,4 +1,3 @@
-import PhoneImg from "@/assets/phone.png" ;
 import * as S from "./styles";
 import { FaChevronRight } from "react-icons/fa6";
 
@@ -8,23 +7,19 @@ export const MainTop = () => {
       <S.InfoTop id="home">
         <S.Info>
           <h2>Dyno Bomber</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur Possimus ex temporibus distinctio,</p>
+          <p>Explore aventuras explosivas em Dyno Bomber! Controle dinossauros, plante bombas e conquiste cada desafio!</p>
         </S.Info>
-
-        <S.InfoPhone>
-          <img src={PhoneImg} alt="phone img" className="z-10" />
-        </S.InfoPhone>
       </S.InfoTop>
 
       <S.Main>
-        <h2>Lorem ipsum dipisicing elit.</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, Lorem ipsum dolor, sit amet consectetur elit</p>
+        <h2>Explosões e Aventura Pré-histórica</h2>
+        <p>Junte-se à batalha épica dos dinossauros e prove que você é o melhor em Dyno Bomber!</p>
       </S.Main>
 
       <S.InfoBottom>
         <S.InfoBottomText>
-          <h2>LEGENDARY CHARACTERS</h2>
-          <p>Explore a growing roster of powerful characters, each with their own unique personality, strengths, and abilities.</p>
+          <h2>DINOSSAUROS COM PERSONALIDADE</h2>
+          <p>Explore uma seleção incrível de dinossauros, cada um com habilidades únicas e muita atitude explosiva.</p>
 
           <S.ButtonPlay>
             Play now <FaChevronRight />
@@ -32,8 +27,8 @@ export const MainTop = () => {
         </S.InfoBottomText>
 
         <S.InfoBottomText>
-          <h2>LEGENDARY CHARACTERS</h2>
-          <p>Explore a growing roster of powerful characters, each with their own unique personality, strengths, and abilities.</p>
+          <h2>ITENS PODEROSOS</h2>
+          <p>Descubra diversos itens especiais que podem virar o jogo e ajudar você a dominar cada partida.</p>
 
           <S.ButtonPlay>
             Play now <FaChevronRight />
@@ -41,8 +36,8 @@ export const MainTop = () => {
         </S.InfoBottomText>
 
         <S.InfoBottomText>
-          <h2>LEGENDARY CHARACTERS</h2>
-          <p>Explore a growing roster of powerful characters, each with their own unique personality, strengths, and abilities.</p>
+          <h2>CENÁRIOS DINÂMICOS</h2>
+          <p>Enfrente desafios em arenas interativas e cheias de armadilhas, testando suas habilidades ao máximo.</p>
 
           <S.ButtonPlay>
             Play now <FaChevronRight />
