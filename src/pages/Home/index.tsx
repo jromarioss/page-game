@@ -1,5 +1,5 @@
-import { Container } from "@/components";
-import { MainTop, MainCharacters, MainBottom, MainEmail, MainVideo } from "./components";
+import { Container, Banner } from "@/components";
+import { MainTop, MainCharacters, MainBottom, MainEmail, MainCenary, MainVideo } from "./components";
 import * as S from "./styles";
 import { FaAngleUp } from "react-icons/fa6";
 import { useEffect, useState } from "react";
@@ -24,9 +24,11 @@ export function Home() {
   return (
     <Container>
       <S.Content>
+        <Banner />
         <MainTop />
         <MainCharacters />
         <MainBottom />
+        <MainCenary />
         <MainVideo />
         <MainEmail />
 

@@ -57,3 +57,10 @@ hidden
 lg:flex
 lg:text-2xl
 `;
+
+export const ButtonA = tw.a`
+hidden
+
+lg:flex
+lg:text-2xl
+`;

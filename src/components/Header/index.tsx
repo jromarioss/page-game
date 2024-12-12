@@ -32,6 +32,8 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
               </S.Button>
             )
           })}
+
+          <S.ButtonA href="https://pancakeswap.finance/?outputCurrency=0x5FB60A9e69B53EDbC95a5a2D9DD4ABD8C16c4233&inputCurrency=0x2170Ed0880ac9A755fd29B2688956BD959F933F8" target="_blank">Comprar Moeda</S.ButtonA>
           
           <ConnectButton
             client={client}

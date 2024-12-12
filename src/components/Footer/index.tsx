@@ -32,7 +32,8 @@ export const Footer = () => {
       <S.ButtonsAreas>
         <p onClick={scrollToTop}>home</p>
         <p onClick={() => handleGoTo("characters")}>personagens</p>
-        <p onClick={() => handleGoTo("tutorial")}>tutorial</p>
+        <p onClick={() => handleGoTo("cenary")}>tutorial</p>
+        <p onClick={() => handleGoTo("tutorial")}>Como Jogar</p>
       </S.ButtonsAreas>
 
       <S.RedesArea>

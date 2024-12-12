@@ -19,6 +19,7 @@ gap-4
 
 [&>p]:font-lato
 [&>p]:text-white
+[&>p]:cursor-pointer
 
 md:gap-8
 `;

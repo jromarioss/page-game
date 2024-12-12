@@ -49,7 +49,7 @@ xl:pb-16
 2xl:h-[700px]
 `;
 
-export const VideoFrame = tw.iframe`
+export const VideoFrame = tw.video`
 w-full
 h-full
 rounded-xl

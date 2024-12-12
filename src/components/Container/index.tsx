@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
-import * as S from './styles';
-import { Header, Menu, Footer } from '../';
-import { useMain } from '@/hooks';
+import { ReactNode } from "react";
+import * as S from "./styles";
+import { Header, Menu, Footer } from "../";
+import { useMain } from "@/hooks";
 
 interface IContainer {
   children: ReactNode
@@ -18,7 +18,8 @@ export const Container = ({ children }: IContainer) => {
   const buttons: IButtons[] = [
     {title: "Home",value:"home"},
     {title: "Personagens",value:"characters"},
-    {title: "Cenário",value:"tutorial"},
+    {title: "Cenário",value:"cenary"},
+    {title: "Como Jogar",value:"tutorial"}
   ]
 
   const handleGoTo = (value: string) => {
@@ -36,7 +37,7 @@ export const Container = ({ children }: IContainer) => {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
 

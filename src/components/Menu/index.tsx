@@ -28,7 +28,10 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
               {button.title}
             </S.Buttons>
           )
+          
         })}
+
+        <S.Buttons >Comprar Moeda</S.Buttons>
 
         <ConnectButton
           client={client}
@@ -49,12 +52,3 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
     </S.Container>
   );
 };
-/* 
-detailsModal={{
-    payOptions: {
-      buyWithFiat: {
-        testMode: true, // defaults to false
-      },
-    },
-  }}
-*/
