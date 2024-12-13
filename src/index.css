@@ -28,3 +28,7 @@
     background-position: center;
   }
 }
+
+.txtShadow {
+  text-shadow: 20px 2px 200px red;
+}

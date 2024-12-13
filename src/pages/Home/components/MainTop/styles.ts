@@ -12,7 +12,6 @@ bgMainTop
 export const InfoTop = tw.article`
 w-full
 h-[350px]
-mt-[200px]
 flex
 flex-col
 gap-16
@@ -36,23 +35,27 @@ flex-col
 gap-4
 items-center
 text-center
+txtShadow
 
 [&>h2]:text-4xl
-[&>h2]:text-center
 [&>h2]:font-bold
 [&>h2]:font-russo
+[&>h2]:txtShadow
 
 [&>p]:text-lg
 [&>p]:text-wrap
 [&>p]:font-lato
+[&>p]:txtShadow
 
 md:px-8
 
-xl:w-[600px]
-xl:items-start
+xl:w-[800px]
+xl:items-center
 xl:px-0
 xl:gap-6
 xl:[&>p]:mb-8
+xl:[&>p]:text-3xl
+xl:[&>p]:font-semibold
 `;
 
 export const Main = tw.main`
@@ -87,6 +90,7 @@ lg:[&>p]:w-[800px]
 
 xl:[&>h2]:w-[900px]
 xl:[&>p]:w-[900px]
+xl:[&>p]:text-2xl
 `;
 
 export const InfoBottom = tw.article`

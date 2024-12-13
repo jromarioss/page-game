@@ -31,11 +31,7 @@ export function Home() {
         <MainCenary />
         <MainVideo />
         <MainEmail />
-
-        {showScrollButton &&
-          <S.ButtonScrool onClick={scrollToTop}>
-            <FaAngleUp />
-          </S.ButtonScrool>}
+        {showScrollButton && <S.ButtonScrool onClick={scrollToTop}><FaAngleUp /></S.ButtonScrool>}
       </S.Content>
     </Container>
   )
