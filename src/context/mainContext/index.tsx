@@ -8,8 +8,8 @@ interface IMainContext {
   scrollToTop: () => void;
   client: any;
   wallets: any;
-  contract: string;
-  setContract: Dispatch<SetStateAction<string>>;
+  userAddress: string;
+  setUserAddress: Dispatch<SetStateAction<string>>;
 }
 
 interface IMainContextProvider {
@@ -20,16 +20,14 @@ export const MainContext = createContext({} as IMainContext);
 
 export function MainContextProvider({ children }: IMainContextProvider) {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const [contract, setContract] = useState<string>("");
+  const [userAddress, setUserAddress] = useState<string>("");
 
   const client = createThirdwebClient({clientId: "8e214011a85f0c5ac3d7f5bf52f6a12c"});
-  //0x8b5b221B53B1cD262135BBa34B627Dc0729AC92B
+
   const wallets = [
     inAppWallet({ auth: { options: ["google","email","phone"] } }),
     createWallet("io.metamask"),
   ];
-
-  console.log(wallets)
 
   const onSetShowMenu = (value: boolean) => setShowMenu(value);
 
@@ -37,7 +35,7 @@ export function MainContextProvider({ children }: IMainContextProvider) {
 
   return (
     <MainContext.Provider
-      value={{ onSetShowMenu, showMenu, scrollToTop, setContract, client, contract,wallets }}
+      value={{ onSetShowMenu, showMenu, scrollToTop, setUserAddress, client, userAddress, wallets }}
     >
       {children}
     </MainContext.Provider>

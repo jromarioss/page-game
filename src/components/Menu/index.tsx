@@ -10,7 +10,7 @@ interface IMenu {
 }
 
 export const Menu = ({ buttons, handleGoTo }: IMenu) => {
-  const { onSetShowMenu, client, wallets } = useMain();
+  const { onSetShowMenu, client, wallets, userAddress } = useMain();
 
   return (
     <S.Container>
@@ -31,7 +31,9 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
           
         })}
 
-        <S.Buttons >Comprar Moeda</S.Buttons>
+         {userAddress && 
+            <S.ButtonA href="https://pancakeswap.finance/?outputCurrency=0x5FB60A9e69B53EDbC95a5a2D9DD4ABD8C16c4233&inputCurrency=0x2170Ed0880ac9A755fd29B2688956BD959F933F8" target="_blank">Comprar Moeda</S.ButtonA>
+          }
 
         <ConnectButton
           client={client}

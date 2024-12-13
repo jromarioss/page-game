@@ -48,3 +48,11 @@ coursor-pointer
 
 md:text-3xl
 `;
+
+export const ButtonA = tw.a`
+text-lg
+font-semibold
+coursor-pointer
+
+md:text-3xl
+`;

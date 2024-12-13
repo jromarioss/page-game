@@ -9,17 +9,15 @@ export default {
   theme: {
     extend: {
       animation: {
-        marquee: 'marquee 5s linear infinite',
-        blink: 'blink 0.5s step-start infinite',
-        blinkmarquee: 'blink 1s step-start infinite, marquee 5s linear infinite',
+        blinkmarquee: "blink 0.8s step-start infinite, marquee 7s linear infinite",
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         blink: {
-          '50%': { opacity: 0 },
+          "50%": { opacity: 0 },
         },
       },
       colors: {
