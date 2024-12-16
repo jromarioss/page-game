@@ -1,0 +1,1 @@
+export const dataInauguracao = "24/12/2024"; // dia/mês/ano

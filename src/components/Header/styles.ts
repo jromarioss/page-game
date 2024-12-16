@@ -19,12 +19,6 @@ md:h-[100px]
 lg:px-10
 `;
 
-export const Logo = tw.div`
-w-[44px]
-h-[44px]
-bg-red-400
-`;
-
 export const Nav = tw.nav`
 h-full
 w-full

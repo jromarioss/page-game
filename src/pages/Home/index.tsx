@@ -4,12 +4,28 @@ import * as S from "./styles";
 import { FaAngleUp } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import { useMain } from "@/hooks";
+import { dataInauguracao } from "@/utils";
 
 export function Home() {
   const { scrollToTop } = useMain();
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
+
+  const shouldShowBanner = () => {
+    const dataAtual = new Date();
+    const [dia, mes, ano] = dataInauguracao.split("/").map(Number);
+    const dataInauguracaoFormatada = new Date(ano, mes - 1, dia);
+
+    if (dataAtual <= dataInauguracaoFormatada) {
+      setShowBanner(true);
+    } else {
+      setShowBanner(false);
+    }
+  }
 
   useEffect(() => {
+    shouldShowBanner();
+
     const handleScroll = () => {
       setShowScrollButton(window.scrollY > 100);
     };
@@ -24,7 +40,7 @@ export function Home() {
   return (
     <Container>
       <S.Content>
-        <Banner />
+        {showBanner && <Banner data={dataInauguracao} />}
         <MainTop />
         <MainCharacters />
         <MainBottom />

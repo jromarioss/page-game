@@ -1,26 +1,30 @@
 import * as S from "./styles";
 
-export const Banner = () => {
+interface IBanner {
+  data: string;
+}
+
+export const Banner = ({ data }: IBanner) => {
 
   return (
     <S.Container>
       <div className="inline-block whitespace-nowrap mr-12 animate-blinkmarquee">
-        <S.Text>Lançamento dia 10/10/2024</S.Text>
+        <S.Text>Lançamento dia {data}</S.Text>
       </div>
       <div className="inline-block whitespace-nowrap mr-12 animate-blinkmarquee">
-        <S.Text>Lançamento dia 10/10/2024</S.Text>
+        <S.Text>Lançamento dia {data}</S.Text>
       </div>
       <div className="inline-block whitespace-nowrap mr-12 animate-blinkmarquee">
-        <S.Text>Lançamento dia 10/10/2024</S.Text>
+        <S.Text>Lançamento dia {data}</S.Text>
       </div>
       <div className="inline-block whitespace-nowrap mr-12 animate-blinkmarquee">
-        <S.Text>Lançamento dia 10/10/2024</S.Text>
+        <S.Text>Lançamento dia {data}</S.Text>
       </div>
       <div className="inline-block whitespace-nowrap mr-12 animate-blinkmarquee">
-        <S.Text>Lançamento dia 10/10/2024</S.Text>
+        <S.Text>Lançamento dia {data}</S.Text>
       </div>
       <div className="inline-block whitespace-nowrap mr-12 animate-blinkmarquee">
-        <S.Text>Lançamento dia 10/10/2024</S.Text>
+        <S.Text>Lançamento dia {data}</S.Text>
       </div>
     </S.Container>
   )
