@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "https://dynobomb.com.br/landing/",
   plugins: [react()],
   resolve: {
     alias: {
