@@ -63,9 +63,15 @@ xl:h-[500px]
 `;
 
 export const CardImg = tw.article`
-w-full
-h-full
+w-[260px]
+h-[216px]
 overflow-hidden
+
+[&>img]:w-full
+[&>img]:h-full
+
+xl:w-[192px]
+xl:h-[148px]
 `;
 
 export const CardInfo = tw.article`

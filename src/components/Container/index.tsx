@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import * as S from "./styles";
-import { Header, Menu, Footer } from "../";
+import { Header, Menu, Footer, ModalBuy } from "../";
 import { useMain } from "@/hooks";
 
 interface IContainer {
@@ -13,7 +13,7 @@ export interface IButtons {
 }
 
 export const Container = ({ children }: IContainer) => {
-  const { showMenu, onSetShowMenu, scrollToTop } = useMain();
+  const { showMenu, onSetShowMenu, scrollToTop, openModal } = useMain();
 
   const buttons: IButtons[] = [
     {title: "Home",value:"home"},
@@ -46,16 +46,9 @@ export const Container = ({ children }: IContainer) => {
 
   return (
     <S.Container>
-      <Header
-        buttons={buttons}
-        handleGoTo={handleGoTo}        
-      />
-
-      {showMenu && 
-        <Menu
-          buttons={buttons}
-          handleGoTo={handleGoTo}        
-        />}
+      <Header buttons={buttons} handleGoTo={handleGoTo} />
+      {showMenu && <Menu buttons={buttons} handleGoTo={handleGoTo} />}
+      {openModal && <ModalBuy />}
 
       {children}
       <Footer />

@@ -5,7 +5,9 @@ import { useActiveAccount  } from "thirdweb/react";
 
 interface IMainContext {
   showMenu: boolean;
+  openModal: boolean;
   onSetShowMenu: (value: boolean) => void;
+  onSetOpenModal: (value: boolean) => void;
   scrollToTop: () => void;
   client: any;
   wallets: any;
@@ -21,6 +23,7 @@ export const MainContext = createContext({} as IMainContext);
 
 export function MainContextProvider({ children }: IMainContextProvider) {
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [openModal, setOpenModal] = useState<boolean>(false);
   const [userAddress, setUserAddress] = useState<string>("");
 
   const client = createThirdwebClient({clientId: "8e214011a85f0c5ac3d7f5bf52f6a12c"});
@@ -36,21 +39,24 @@ export function MainContextProvider({ children }: IMainContextProvider) {
 
   const onSetShowMenu = (value: boolean) => setShowMenu(value);
 
+  const onSetOpenModal = (value: boolean) => {
+    if (showMenu) setShowMenu(false);
+
+    setOpenModal(value);
+  }
+
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   const activeAccount = useActiveAccount();
 
   useEffect(() => {
-    if (activeAccount) {
-      setUserAddress(activeAccount?.address)
-    } else {
-      setUserAddress("");
-    }
+    if (activeAccount) setUserAddress(activeAccount?.address)
+    else setUserAddress("");
   }, [userAddress, activeAccount, setUserAddress])
 
   return (
     <MainContext.Provider
-      value={{ onSetShowMenu, showMenu, scrollToTop, client, userAddress, wallets, pancakeSwapURL }}
+      value={{ onSetShowMenu, showMenu, scrollToTop, client, userAddress, wallets, pancakeSwapURL, onSetOpenModal, openModal }}
     >
       {children}
     </MainContext.Provider>

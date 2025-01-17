@@ -14,7 +14,9 @@ export const MainCharacters = () => {
 
       <S.Cards>
         <S.Card>
-          <S.CardImg>
+          <S.CardImg
+            className="md:w-[450px] md:h-[450px] xl:w-[400px] xl:h-[400px]"
+          >
             <img src={Dino1PNG} alt="Dinossauro img" />
           </S.CardImg>
 
@@ -26,9 +28,7 @@ export const MainCharacters = () => {
 
         <S.Wrapp>
           <S.Card2>
-            <S.CardImg>
-              <img src={Dino3PNG} alt="Dinossauro img" />
-            </S.CardImg>
+            <S.CardImg><img src={Dino3PNG} alt="Dinossauro img" /></S.CardImg>
 
             <S.CardInfo2>
               <h2>Épico</h2>
@@ -37,9 +37,7 @@ export const MainCharacters = () => {
           </S.Card2>
 
           <S.Card2>
-            <S.CardImg>
-              <img src={Dino2PNG} alt="Dinossauro img" />
-            </S.CardImg>
+            <S.CardImg><img src={Dino2PNG} alt="Dinossauro img" /></S.CardImg>
 
             <S.CardInfo2>
               <h2>Lendario</h2>
@@ -48,9 +46,7 @@ export const MainCharacters = () => {
           </S.Card2>
 
           <S.Card2>
-            <S.CardImg>
-              <img src={Dino4PNG} alt="Dinossauro img" />
-            </S.CardImg>
+            <S.CardImg><img src={Dino4PNG} alt="Dinossauro img" /></S.CardImg>
 
             <S.CardInfo2>
               <h2>Raro</h2>

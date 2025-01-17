@@ -21,25 +21,25 @@ export const MainTop = () => {
           <h2>DINOSSAUROS COM PERSONALIDADE</h2>
           <p>Explore uma seleção incrível de dinossauros, cada um com habilidades únicas e muita atitude explosiva.</p>
 
-          <S.ButtonPlay>
+          <S.ButtonPlay href="https://dynobomb.com.br/dyno/" target="_blank">
             Play now <FaChevronRight />
-            </S.ButtonPlay>
+          </S.ButtonPlay>
         </S.InfoBottomText>
 
         <S.InfoBottomText>
           <h2>ITENS PODEROSOS</h2>
           <p>Descubra diversos itens especiais que podem virar o jogo e ajudar você a dominar cada partida.</p>
 
-          <S.ButtonPlay>
+          <S.ButtonPlay href="https://dynobomb.com.br/dyno/" target="_blank">
             Play now <FaChevronRight />
-            </S.ButtonPlay>
+          </S.ButtonPlay>
         </S.InfoBottomText>
 
         <S.InfoBottomText>
           <h2>CENÁRIOS DINÂMICOS</h2>
           <p>Enfrente desafios em arenas interativas e cheias de armadilhas, testando suas habilidades ao máximo.</p>
 
-          <S.ButtonPlay>
+          <S.ButtonPlay href="https://dynobomb.com.br/dyno/" target="_blank">
             Play now <FaChevronRight />
           </S.ButtonPlay>
         </S.InfoBottomText>

@@ -136,7 +136,7 @@ md:[&>h2]:text-2xl
 md:[&>p]:text-lg
 `;
 
-export const ButtonPlay = tw.article`
+export const ButtonPlay = tw.a`
 flex
 items-center
 justify-center

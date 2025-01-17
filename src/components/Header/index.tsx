@@ -10,7 +10,7 @@ interface IHeader {
 }
 
 export const Header = ({ buttons, handleGoTo }: IHeader) => {
-  const { onSetShowMenu, client, wallets, userAddress, pancakeSwapURL } = useMain();
+  const { onSetShowMenu, client, wallets, userAddress, onSetOpenModal, openModal, pancakeSwapURL } = useMain();
 
   return (
     <S.Container>
@@ -29,7 +29,8 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
             )
           })}
 
-          {(userAddress !== "" && userAddress) && <S.ButtonA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonA>}
+          {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>}
+          {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda Via QR</S.ButtonA>}
           
           <ConnectButton
             client={client}
