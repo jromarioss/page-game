@@ -27,7 +27,7 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
           })}
 
           {/* {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>} */}
-          {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda Via QR</S.ButtonA>}
+          {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda</S.ButtonA>}
           
           <ConnectButton
             client={client}

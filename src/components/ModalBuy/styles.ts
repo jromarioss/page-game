@@ -15,40 +15,62 @@ bg-project-shadow
 
 export const Close = tw.div`
 absolute
-top-2
-right-2
+top-1
+right-1
 
 [&>svg]:text-white
 [&>svg]:text-2xl
 
 md:[&>svg]:text-4xl
+md:top-2
+md:right-2
 `;
 
 export const Main = tw.div`
 bg-project-gray-100
-w-[280px]
-h-[280px]
+
 flex
-p-8
+flex-col
+gap-4
+p-6
 justify-center
 items-center
 relative
 rounded-xl
 border-2
+z-[200]
 border-project-gray-200
 
-md:w-[400px]
-md:h-[400px]
+
+md:p-10
+md:gap-8
 `;
 
 export const QrCode = tw.div`
 w-[180px]
 h-[180px]
-bg-red-500
+flex
+items-center
+justify-center
+rounded-xl
+bg-project-white
 
-[&>img]:w-full
-[&>img]:h-full
+md:w-[232px]
+md:h-[232px]
+`;
 
-md:w-[250px]
-md:h-[250px]
+export const ButtonCopy = tw.button`
+border-2
+rounded-xl
+px-8
+py-2
+border-project-white
+text-xl
+font-semibold
+transition
+duration-300
+ease-in-out
+hover:scale-110
+
+md:text-2xl
 `;
