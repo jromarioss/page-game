@@ -10,7 +10,7 @@ interface IHeader {
 }
 
 export const Header = ({ buttons, handleGoTo }: IHeader) => {
-  const { onSetShowMenu, client, wallets, userAddress, onSetOpenModal, openModal, pancakeSwapURL } = useMain();
+  const { onSetShowMenu, client, wallets, userAddress, onSetOpenModal, openModal } = useMain();
 
   return (
     <S.Container>
@@ -20,16 +20,13 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
         <S.NavButtons>
           {buttons.map((button: IButtons, index: number) => {
             return (
-              <S.Button
-                key={index}
-                onClick={() => handleGoTo(button.value)}
-              >
+              <S.Button key={index} onClick={() => handleGoTo(button.value)}>
                 {button.title}
               </S.Button>
             )
           })}
 
-          {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>}
+          {/* {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>} */}
           {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda Via QR</S.ButtonA>}
           
           <ConnectButton

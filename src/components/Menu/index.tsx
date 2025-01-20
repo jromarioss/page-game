@@ -10,7 +10,7 @@ interface IMenu {
 }
 
 export const Menu = ({ buttons, handleGoTo }: IMenu) => {
-  const { onSetShowMenu, client, wallets, userAddress, onSetOpenModal, openModal, pancakeSwapURL } = useMain();
+  const { onSetShowMenu, client, wallets, userAddress, onSetOpenModal, openModal } = useMain();
 
   return (
     <S.Container>
@@ -21,7 +21,7 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
           return <S.Buttons key={index} onClick={() => handleGoTo(button.value)}>{button.title}</S.Buttons>
         })}
 
-        {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>}
+        {/* {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>} */}
         {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda Via QR</S.ButtonA>}
 
         <ConnectButton
