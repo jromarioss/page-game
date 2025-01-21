@@ -2,7 +2,7 @@ import { useMain } from "@/hooks";
 import * as S from "./styles";
 import { IoMenu } from "react-icons/io5";
 import { IButtons } from "../Container";
-import { ConnectButton  } from "thirdweb/react";
+//import { ConnectButton  } from "thirdweb/react";
 
 interface IHeader {
   buttons: IButtons[];
@@ -10,7 +10,7 @@ interface IHeader {
 }
 
 export const Header = ({ buttons, handleGoTo }: IHeader) => {
-  const { onSetShowMenu, client, wallets, userAddress, onSetOpenModal, openModal } = useMain();
+  const { onSetShowMenu, onSetOpenModal, openModal } = useMain();
 
   return (
     <S.Container>
@@ -27,9 +27,10 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
           })}
 
           {/* {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>} */}
-          {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda</S.ButtonA>}
+          {/* {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda</S.ButtonA>} */}
+          <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda</S.ButtonA>
           
-          <ConnectButton
+          {/* <ConnectButton
             client={client}
             wallets={wallets}
             connectModal={{
@@ -42,7 +43,7 @@ export const Header = ({ buttons, handleGoTo }: IHeader) => {
                 },
               },
             }}
-          />
+          /> */}
         </S.NavButtons>       
       </S.Nav>
     </S.Container>

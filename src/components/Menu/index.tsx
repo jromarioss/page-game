@@ -2,7 +2,7 @@ import * as S from './styles';
 import { IoCloseSharp } from 'react-icons/io5';
 import { useMain } from '@/hooks';
 import { IButtons } from '../Container';
-import { ConnectButton } from "thirdweb/react";
+//import { ConnectButton } from "thirdweb/react";
 
 interface IMenu {
   buttons: IButtons[];
@@ -10,7 +10,7 @@ interface IMenu {
 }
 
 export const Menu = ({ buttons, handleGoTo }: IMenu) => {
-  const { onSetShowMenu, client, wallets, userAddress, onSetOpenModal, openModal } = useMain();
+  const { onSetShowMenu, onSetOpenModal, openModal } = useMain();
 
   return (
     <S.Container>
@@ -22,9 +22,10 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
         })}
 
         {/* {(userAddress !== "" && userAddress) && <S.ButtonAA href={pancakeSwapURL} target="_blank">Comprar Moeda</S.ButtonAA>} */}
-        {(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda</S.ButtonA>}
+        {/*{(userAddress !== "" && userAddress) && <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda</S.ButtonA>} */}
+       <S.ButtonA onClick={() => onSetOpenModal(!openModal)}>Comprar Moeda</S.ButtonA>
 
-        <ConnectButton
+        {/* <ConnectButton
           client={client}
           wallets={wallets}
           connectModal={{
@@ -38,7 +39,7 @@ export const Menu = ({ buttons, handleGoTo }: IMenu) => {
               },
             },
           }}
-        />
+        /> */}
       </S.Main>
     </S.Container>
   );
