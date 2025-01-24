@@ -4,3 +4,4 @@ export { MainBottom } from "./MainBottom";
 export { MainEmail } from "./MainEmail";
 export { MainCenary } from "./MainCenary";
 export { MainVideo } from "./MainVideo";
+export { BuyItem } from "./BuyItem";

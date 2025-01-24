@@ -26,6 +26,12 @@ export const ModalBuy = () => {
         <S.QrCode>
           <QRCodeSVG value={KEY_USER} className='w-[150px] h-[150px] md:w-[200px] md:h-[200px]' />
         </S.QrCode>
+
+        <div className="flex flex-col items-center justify-center">
+          <p className="text-xl font-medium md:text-2xl">1 DYNOCOIN = 1 USDT</p>
+          <p className="text-xl font-medium md:text-2xl">1 OVO = 100 DYNOCOINS</p>
+        </div>
+
         <S.ButtonCopy onClick={handleCopy}>COPIAR</S.ButtonCopy>
       </S.Main>
     </S.Container>
