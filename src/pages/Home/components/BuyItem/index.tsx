@@ -3,7 +3,7 @@ import { useMain } from "@/hooks";
 import EggIMG from "@/assets/egg.png";
 
 export const BuyItem = () => {
-  const { openModal, onSetOpenModal } = useMain();
+  const { onSetOpenModal } = useMain();
 
   return (
     <S.Container>
