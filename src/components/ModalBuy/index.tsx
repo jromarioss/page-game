@@ -44,7 +44,7 @@ export const ModalBuy = () => {
         </div>
 
         <div className='flex flex-col gap-4'>
-          <S.ButtonCopy onClick={handleCopy}>COPIAR</S.ButtonCopy>
+          <S.ButtonCopy onClick={handleCopy}>CARTEIRA</S.ButtonCopy>
           <S.ButtonCopy onClick={handleCopyContract}>CONTRATO</S.ButtonCopy>
         </div>
       </S.Main>
